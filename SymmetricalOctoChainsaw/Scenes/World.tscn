@@ -1,0 +1,130 @@
+[gd_scene load_steps=9 format=1]
+
+[ext_resource path="res://Scripts/World.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Player0.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Player1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Player2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/bullet2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Player3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Spawn.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/BlackAndPurple.tscn" type="PackedScene" id=8]
+
+[node name="World" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 15, 15 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 1000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = true
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[node name="Background" type="Sprite" parent="."]
+
+visibility/behind_parent = true
+visibility/light_mask = 0
+transform/rot = 90.0
+transform/scale = Vector2( 3, 3 )
+
+[node name="Player0" parent="." groups=[
+"players",
+"numofplayers",
+] instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -198.234, -278.986 )
+transform/rot = 32.7163
+
+[node name="Player1" parent="." groups=[
+"players",
+"numofplayers",
+] instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 198.856, -281.121 )
+transform/rot = -32.3103
+
+[node name="Player2" parent="." groups=[
+"players",
+"numofplayers",
+] instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -197.509, 280.281 )
+transform/rot = 146.295
+bullet2_scene = ExtResource( 5 )
+
+[node name="Player3" parent="." groups=[
+"players",
+"numofplayers",
+] instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 195.154, 274.897 )
+transform/rot = -146.043
+
+[node name="Spawners" type="Node" parent="."]
+
+editor/display_folded = true
+
+[node name="Spawn" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 6219.53, 4959.11 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn4" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( -78.8748, 6017.67 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn1" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 5745.4, -4965.17 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn5" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 9585.31, 55.9766 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn2" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( -6484.05, 4782.95 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn6" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( -9849.98, -69.9678 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn3" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( -6561.31, -4973.54 )
+spawn_object = ExtResource( 8 )
+
+[node name="Spawn7" parent="Spawners" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 9.34473, -5399.48 )
+spawn_object = ExtResource( 8 )
+
+[node name="GUI" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+
