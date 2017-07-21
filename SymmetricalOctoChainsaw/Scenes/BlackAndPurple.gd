@@ -15,9 +15,6 @@ var angle = 0.0
 var killed_by
 
 func _ready():
-	MOVEMENT_SPEED = MOVEMENT_SPEED*get_parent().get_parent().challenge
-	print (MOVEMENT_SPEED)
-	#MAX_HEALTH = MAX_HEALTH*get_parent().get_parent().challenge
 	set_fixed_process(true)
 	add_to_group("enemies")
 	health = MAX_HEALTH
@@ -51,7 +48,7 @@ func _on_Area2D_body_enter(body):
 		body.health = body.health - 1
 		var sampler = get_node("SamplePlayer")
 		var voiceID = sampler.play("Agh")
-		sampler.set_volume(voiceID, 1.25)
+		sampler.set_volume(voiceID, 1)
 		#queue_free()
 	
 func get_closest_node2d(array_of_node2ds, enemyLocation):
