@@ -1,7 +1,7 @@
 extends Node2D
 
 export (PackedScene) var spawn_object
-export var cooldown = 1.5
+export var cooldown = 3
 var timer
 var area
 
