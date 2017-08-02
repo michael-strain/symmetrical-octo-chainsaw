@@ -20,7 +20,7 @@ func _ready():
 	health = MAX_HEALTH
 	speed_holder = MOVEMENT_SPEED
 	weaponHeld = "basic"
-	add_to_group("players")
+	#add_to_group("players")
 	
 func _fixed_process(delta):
 	time_to_next_shot -= delta

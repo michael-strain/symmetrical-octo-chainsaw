@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=1]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 182.533
+
+[node name="CollisionShape2D" type="CollisionShape2D"]
+
+material/use_parent = true
+transform/pos = Vector2( 2.7207, -122.125 )
+transform/scale = Vector2( 2, 2 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+
