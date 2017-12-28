@@ -1,15 +1,7 @@
 # symmetrical-octo-chainsaw
 This is mine.  You can't have any.
 
-That being said, when this is complete, I'll probably try to throw up all over steam with it, so like, five bucks and it's yours.
+Someday, I will update this with the current version of the game.
+Then someday after that, I will continue working on the game.  This has the makings of a really fun game, it's just not there yet.
 
-
-
-
-The game itself is about love, death, loss, tragedy, comedy, excitement, adventure, trailing lists of adjectives,
-but mostly just shooting stuff.  
-My image of the game is sort of like a really dirty, semi-violent threesome between Asteroids, Tron, and Diablo.
-If you want to actually contribute to this game, send me an e-mail and I would be happy to send you some tasks,
-but you likely have much better things to do with your life... so quit procrastinating and go do them.
-
-E-mail: michael.v.strain@gmail.com
+Why life?  Why must you make me so busy??
